@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PetVC" customModule="PET_MART" customModuleProvider="target">
+            <connections>
+                <outlet property="GenderLBL" destination="KDc-qU-1Th" id="oHr-8n-HWt"/>
+                <outlet property="NameLBL" destination="ojR-Qk-Tz1" id="Htp-48-67l"/>
+                <outlet property="PetIV" destination="EDu-6a-nVk" id="Ch7-Vy-XZK"/>
+                <outlet property="TypeBreedLBL" destination="b8n-Kb-TJt" id="4zF-ei-EAf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="glG-wx-CC8">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pkv-bx-lhW" userLabel="BigContainerSV">
+                    <rect key="frame" x="10" y="69" width="373" height="739"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="D7I-9Y-VML">
+                            <rect key="frame" x="0.0" y="0.0" width="373" height="739"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pawprint.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EDu-6a-nVk">
+                                    <rect key="frame" x="0.0" y="1" width="149.33333333333334" height="737.66666666666663"/>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="e5i-Vi-CS1" userLabel="PetDetailsSV">
+                                    <rect key="frame" x="157.33333333333337" y="0.0" width="215.66666666666663" height="739"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojR-Qk-Tz1" userLabel="Name">
+                                            <rect key="frame" x="0.0" y="0.0" width="215.66666666666666" height="241"/>
+                                            <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="30"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type and Breed" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8n-Kb-TJt">
+                                            <rect key="frame" x="0.0" y="249" width="215.66666666666666" height="241"/>
+                                            <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDc-qU-1Th">
+                                            <rect key="frame" x="0.0" y="498" width="215.66666666666666" height="241"/>
+                                            <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="EDu-6a-nVk" firstAttribute="width" secondItem="D7I-9Y-VML" secondAttribute="width" multiplier="0.4" id="9Tz-M9-XZm"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="HYY-ps-2yx"/>
+            <color key="backgroundColor" red="0.95294117647058818" green="0.95686274509803915" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="HYY-ps-2yx" firstAttribute="bottom" secondItem="pkv-bx-lhW" secondAttribute="bottom" constant="10" id="Zsv-Ju-2ST"/>
+                <constraint firstItem="HYY-ps-2yx" firstAttribute="trailing" secondItem="pkv-bx-lhW" secondAttribute="trailing" constant="10" id="akS-c5-qH9"/>
+                <constraint firstItem="pkv-bx-lhW" firstAttribute="top" secondItem="HYY-ps-2yx" secondAttribute="top" constant="10" id="rV2-RF-1iL"/>
+                <constraint firstItem="pkv-bx-lhW" firstAttribute="leading" secondItem="HYY-ps-2yx" secondAttribute="leading" constant="10" id="z4J-3Q-Dsk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="64.885496183206101" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pawprint.fill" catalog="system" width="128" height="112"/>
+    </resources>
+</document>
